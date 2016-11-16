@@ -22,15 +22,10 @@ class ReverseStringTest(unittest.TestCase):
 		for eachNumber in range(1, 10):
 			payload['number'] = eachNumber
 			response = requests.get(endpoint, params=payload)
+			#converting response dat to json
 			isPrimeFromEndpoint = response.json()
 			isPrimeActual = is_prime_number(eachNumber)
-			
-			# print(eachNumber)
-			
-			# print(isPrimeActual)
-			
-			# print(isPrimeFromEndpoint)
-			
+
 			if isPrimeFromEndpoint == isPrimeActual and isPrimeActual == True:
 				print (eachNumber, "Is a Prime number")
 				self.assertTrue(True)
