@@ -19,7 +19,7 @@ class PrimeNumberTest(unittest.TestCase):
 
 	def testPrimenumber(self):
 		payload = {}
-		for eachNumber in range(1, 10):
+		for eachNumber in range(1, 1000):
 			payload['number'] = eachNumber
 			response = requests.get(endpoint, params=payload)
 			#converting response dat to json
