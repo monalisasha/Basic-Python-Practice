@@ -17,7 +17,7 @@ def is_prime_number(n):
 class PrimeNumberTest(unittest.TestCase):
 	"""docstring for PrimeNumberTest"""
 
-	def testReverseSentence(self):
+	def testPrimenumber(self):
 		payload = {}
 		for eachNumber in range(1, 10):
 			payload['number'] = eachNumber
