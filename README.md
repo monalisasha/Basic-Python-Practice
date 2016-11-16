@@ -9,3 +9,5 @@
 * cd Project
 * python primeNumber_test.py
 * python reverseString_new.py
+
+![Screenshot](outputs.png)
