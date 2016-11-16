@@ -14,8 +14,8 @@ def is_prime_number(n):
             return False
     return True
 
-class ReverseStringTest(unittest.TestCase):
-	"""docstring for ReverseStringTest"""
+class PrimeNumberTest(unittest.TestCase):
+	"""docstring for PrimeNumberTest"""
 
 	def testReverseSentence(self):
 		payload = {}
